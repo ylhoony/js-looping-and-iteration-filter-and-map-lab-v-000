@@ -23,5 +23,11 @@ function exactMatch(collection, obj) {
 }
 
 function exactMatchToList(collection, obj) {
-  
+  const newCollection = collection.filter(function(driver) {
+    const param = [Object.keys(obj)];
+    return driver[param] === obj[param];
+  });
+  return newCollection.map(function(list) {
+    return list.name;
+  })
 }
