@@ -11,4 +11,7 @@ function driverNamesWithRevenueOver(collection, num) {
   newcollection.push(collection.filter(function(driver) {
     return driver.revenue > num;
   }));
+  return newCollection.map(function(list) {
+    return list.name;
+  })
 }
