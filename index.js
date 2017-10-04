@@ -21,3 +21,7 @@ function exactMatch(collection, obj) {
     return driver[param] === obj[param];
   });
 }
+
+function exactMatchToList(collection, obj) {
+  
+}
